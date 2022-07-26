@@ -9,22 +9,28 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>top.zerotop.gateway</groupId>
-    <artifactId>scapplion-gateway</artifactId>
+    <artifactId>scallion-gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>scapplion-gateway</name>
-    <description>Demo project for Spring Boot</description>
+    <name>scallion-gateway</name>
+    <description>gateway project</description>
     <properties>
         <java.version>11</java.version>
         <spring-cloud.version>2021.0.3</spring-cloud.version>
     </properties>
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webflux</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+        </dependency>
+
+        <!-- 服务注册 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
 
         <dependency>

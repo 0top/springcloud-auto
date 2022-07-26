@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>top.zerotop</groupId>
-    <artifactId>auto</artifactId>
+    <artifactId>scallion</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>auto</name>
     <description>Demo project for Spring Boot</description>
@@ -17,6 +17,9 @@
         <java.version>11</java.version>
         <spring-cloud.version>2021.0.3</spring-cloud.version>
     </properties>
+    <modules>
+        <module>scallion-gateway</module>
+    </modules>
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
