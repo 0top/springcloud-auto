@@ -1,13 +1,13 @@
-package top.zerotop.gateway.scalliongateway;
+package top.zerotop.scallion.web.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ScallionGatewayApplication {
+public class WebExampleApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ScallionGatewayApplication.class, args);
+        SpringApplication.run(WebExampleApplication.class, args);
     }
 
 }
