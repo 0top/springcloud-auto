@@ -17,4 +17,9 @@ public class ExampleController {
     private String invokeExample(@RequestParam String param) {
         return exampleService.invokeExample(param);
     }
+
+    @GetMapping(value = "/nacos")
+    private String invokeNacosExample() {
+        return "invoke nacos web example";
+    }
 }

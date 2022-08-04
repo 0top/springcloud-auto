@@ -6,6 +6,12 @@
 
 java11
 
+
+dag
+springbatch
+elasticseach
+
+
 ## spring-cloud-alibaba
 
 nacos-server: 1.4.2
