@@ -17,6 +17,7 @@
 
     <properties>
         <java.version>11</java.version>
+        <swagger.version>3.0.0</swagger.version>
     </properties>
     <modules>
         <module>web-example</module>
@@ -34,6 +35,11 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-loadbalancer</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-boot-starter</artifactId>
+            <version>${swagger.version}</version>
         </dependency>
 
         <dependency>
