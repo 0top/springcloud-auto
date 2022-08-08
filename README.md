@@ -12,6 +12,11 @@ springbatch
 elasticseach
 
 
+## 规划
+
+[x] 网关
+[ ] 任务(含依赖任务)
+
 ## spring-cloud-alibaba
 
 nacos-server: 1.4.2
