@@ -1,4 +1,4 @@
-package top.zerotop.scallion.gateway.provider;
+package top.zerotop.scallion.data.provider;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
