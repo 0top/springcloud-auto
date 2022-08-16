@@ -15,6 +15,7 @@
 [匹配erlang和rabbitmq版本](https://rabbitmq.com/which-erlang.html)
 
 [rabbitmq下载](https://rabbitmq.com/install-windows.html)
+https://github.com/rabbitmq/rabbitmq-server/releases
 
 ```
 ./rabbitmq-plugins.bat enable.bat rabbitmq_management
