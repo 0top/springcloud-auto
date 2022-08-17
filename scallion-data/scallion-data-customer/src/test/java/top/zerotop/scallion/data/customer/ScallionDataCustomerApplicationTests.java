@@ -1,10 +1,10 @@
-package top.zerotop.scallion.data.provider;
+package top.zerotop.scallion.data.customer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ScallionGatewayWebApplicationTests {
+class ScallionDataCustomerApplicationTests {
 
     @Test
     void contextLoads() {

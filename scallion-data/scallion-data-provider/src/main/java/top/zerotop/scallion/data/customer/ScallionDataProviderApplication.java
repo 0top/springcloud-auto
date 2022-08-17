@@ -1,4 +1,4 @@
-package top.zerotop.scallion.data.provider;
+package top.zerotop.scallion.data.customer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

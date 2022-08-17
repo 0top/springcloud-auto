@@ -1,4 +1,4 @@
-package top.zerotop.scallion.data.provider.data;
+package top.zerotop.scallion.data.customer.data;
 
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +13,7 @@ public class RabbitMqSender {
 
     public void send() {
         int count = 0;
-        while (count < 50) {
+        while (count < 500) {
             try {
                 Thread.sleep(2000);
             } catch (Exception e) {

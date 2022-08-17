@@ -1,4 +1,4 @@
-package top.zerotop.scallion.data.provider.config;
+package top.zerotop.scallion.data.customer.config;
 
 import org.springframework.amqp.core.*;
 import org.springframework.beans.factory.annotation.Autowired;
