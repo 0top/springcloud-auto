@@ -4,13 +4,29 @@
 
 # 技术栈
 
-java11
+- base:
+    java11
+    springboot
+    springcloud
+    mybatis
 
+- task:
+    [ ] dag
+    [ ] springbatch
 
-dag
-springbatch
-elasticseach
+- data:
+    [ ] elasticseach
+    [ ] flink
+    [ ] clinkhouse
+    [ ] mongodb
 
+- queue:
+    [x] rabbitmq
+    [ ] kafka
+  
+- other:
+    [x] swagger
+    [ ] disruptor
 
 ## 规划
 

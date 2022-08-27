@@ -8,7 +8,6 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <artifactId>scallion-task-auto</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
     <name>scallion-task-auto</name>
     <description>Demo project for Spring Boot</description>
     <properties>

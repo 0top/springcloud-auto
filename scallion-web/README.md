@@ -18,3 +18,5 @@ web相关项目
 ### web-psychokinesis
 
 学习说,可以每日发一句话，会根据热度进行排名  
+通过redis进行排名
+
