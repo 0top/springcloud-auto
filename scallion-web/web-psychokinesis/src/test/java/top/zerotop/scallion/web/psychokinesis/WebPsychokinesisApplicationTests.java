@@ -1,10 +1,10 @@
-package top.zerotop.scallion.web.example;
+package top.zerotop.scallion.web.psychokinesis;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WebExampleApplicationTests {
+class WebPsychokinesisApplicationTests {
 
     @Test
     void contextLoads() {

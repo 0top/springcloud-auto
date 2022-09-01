@@ -15,4 +15,9 @@
         <include refid="BaseColumn"/>
         from t_sentence
     </select>
+
+    <insert id="saveSentence">
+        insert into t_sentence(user_id, sentence)
+        values (#{userId}, #{sentence})
+    </insert>
 </mapper>

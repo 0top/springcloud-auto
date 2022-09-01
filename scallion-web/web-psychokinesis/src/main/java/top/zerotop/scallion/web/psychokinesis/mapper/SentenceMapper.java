@@ -8,4 +8,6 @@ import java.util.List;
 @Mapper
 public interface SentenceMapper {
     List<Sentence> listAll();
+
+    int saveSentence(Sentence sentence);
 }

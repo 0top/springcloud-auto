@@ -15,4 +15,8 @@ public class SentenceService {
     public List<Sentence> listSentence() {
         return sentenceMapper.listAll();
     }
+
+    public int saveSentence(Sentence sentence) {
+        return sentenceMapper.saveSentence(sentence);
+    }
 }
