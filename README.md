@@ -27,6 +27,9 @@
 - other:
     [x] swagger
     [ ] disruptor
+  
+- docker：
+    [ ] docker-compose
 
 ## 规划
 
