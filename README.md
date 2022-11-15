@@ -23,10 +23,10 @@
 - queue:
     [x] rabbitmq
     [ ] kafka
+    [ ] disruptor
   
 - other:
     [x] swagger
-    [ ] disruptor
   
 - docker：
     [ ] docker-compose
@@ -35,6 +35,10 @@
 
 [x] 网关
 [ ] 任务(含依赖任务)
+
+## nginx 
+
+- 负载均衡： nignx中的upstream有个backup实现
 
 ## spring-cloud-alibaba
 
