@@ -5,7 +5,7 @@
 # 技术栈
 
 - base:
-    java11
+    java11 (待升级java17)
     springboot
     springcloud
     mybatis
