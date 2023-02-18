@@ -10,7 +10,7 @@
     <groupId>top.zerotop</groupId>
     <artifactId>scallion-auth</artifactId>
     <name>scallion-auth</name>
-    <description>Demo project for Spring Boot</description>
+    <description>scallion auth project</description>
     <packaging>pom</packaging>
     <properties>
         <java.version>11</java.version>

@@ -18,11 +18,13 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <scallion.version>0.0.1-SNAPSHOT</scallion.version>
     </properties>
     <modules>
         <module>scallion-gateway</module>
         <module>scallion-task</module>
         <module>scallion-web</module>
+        <module>scallion-common</module>
     </modules>
 
     <dependencyManagement>

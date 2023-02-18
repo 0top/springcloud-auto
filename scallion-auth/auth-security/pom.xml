@@ -9,10 +9,6 @@
     </parent>
     <artifactId>scallion-auth-security</artifactId>
     <name>scallion-auth-security</name>
-    <description>Demo project for Spring Boot</description>
-    <properties>
-        <java.version>11</java.version>
-    </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>

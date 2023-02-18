@@ -13,8 +13,8 @@ public class Swagger3Config {
     public Docket docket() {
         return new Docket(DocumentationType.OAS_30)
                 .apiInfo(new ApiInfoBuilder()
-                                .contact(new Contact("zeortop", "", ""))
-                                .title("web-example project")
+                                .contact(new Contact("0top", "", ""))
+                                .title("scallion web-example project")
                                 .build()
                 );
     }

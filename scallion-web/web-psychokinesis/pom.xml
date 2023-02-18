@@ -8,14 +8,9 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <artifactId>web-psychokinesis</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
     <name>web-psychokinesis</name>
     <description>web psychokinesis project</description>
     <packaging>jar</packaging>
-
-    <properties>
-        <java.version>11</java.version>
-    </properties>
 
     <dependencies>
         <dependency>

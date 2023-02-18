@@ -15,6 +15,6 @@ public class StartRunner implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        System.out.println("start...");
+        System.out.println("scallion data customer start...");
     }
 }

@@ -4,7 +4,7 @@ web相关项目
 
 ## 模块
 
-- web-example: web项目样例
+- web-example: web项目demo
 - web-psychokinesis：   
     学习说,大家相互鼓励，共同进步的项目
   
