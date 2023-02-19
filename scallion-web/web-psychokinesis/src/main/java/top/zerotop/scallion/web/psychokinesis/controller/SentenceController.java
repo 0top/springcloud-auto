@@ -10,17 +10,17 @@ import top.zerotop.scallion.web.psychokinesis.service.SentenceService;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/psychokinesis")
+@RequestMapping(value = "/sentence")
 public class SentenceController {
     @Autowired
     private SentenceService sentenceService;
 
-    @GetMapping(value = "/sentence")
+    @GetMapping(value = "/list")
     private Response listSentence() {
         return ResponseUtil.ok(sentenceService.listSentence());
     }
 
-    @PostMapping(value = "/sentence")
+    @PostMapping(value = "/save")
     private Response saveSentence(@RequestBody Sentence sentence) {
         return ResponseUtil.ok(sentenceService.saveSentence(sentence));
     }
