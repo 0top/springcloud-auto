@@ -1,6 +1,6 @@
 # springcloud-scallion
 
-使用nacos做服务发现,gateway的springcloud项目
+使用springcloud为技术栈的项目
 
 # 技术栈
 
@@ -35,6 +35,9 @@
 
 [x] 网关
 [ ] 任务(含依赖任务)
+[ ] 业务
+[ ] 监控
+    prometheus
 
 ## nginx 
 
