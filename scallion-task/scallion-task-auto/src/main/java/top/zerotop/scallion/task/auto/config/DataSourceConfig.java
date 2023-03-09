@@ -10,7 +10,7 @@ import javax.sql.DataSource;
 
 @Configuration
 public class DataSourceConfig {
-    @Bean
+    @Bean(name = "scallionTaskDataSource")
     @ConfigurationProperties("spring.datasource.scallion-task")
     public DataSource taskDataSource() {
         return DataSourceBuilder.create().build();
