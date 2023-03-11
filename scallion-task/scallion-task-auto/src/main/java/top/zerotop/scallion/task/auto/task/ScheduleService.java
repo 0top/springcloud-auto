@@ -14,15 +14,18 @@ public class ScheduleService {
     @Autowired
     private ScheduleTaskMapper scheduleTaskMapper;
 
-    @Scheduled(cron = "5 * * * * ?")
+    @Scheduled(cron = "0/5 * * * * ?")
     public void listTask() {
-        List<ScheduleTask> list = scheduleTaskMapper.listAll();
+        try {
+            List<ScheduleTask> list = scheduleTaskMapper.listAll();
 
-        if (!CollectionUtils.isEmpty(list)) {
-            list.forEach(System.out::println);
-        } else {
-            System.out.println("目前无定时任务");
+            if (!CollectionUtils.isEmpty(list)) {
+                list.forEach(System.out::println);
+            } else {
+                System.out.println("目前无定时任务");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-
     }
 }

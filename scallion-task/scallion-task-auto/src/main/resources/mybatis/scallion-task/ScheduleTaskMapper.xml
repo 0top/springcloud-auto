@@ -5,10 +5,14 @@
         <id column="id" jdbcType="INTEGER" property="id"/>
         <result column="task_id" jdbcType="VARCHAR" property="taskId"/>
         <result column="task_name" jdbcType="VARCHAR" property="taskName"/>
+        <result column="task_service" jdbcType="VARCHAR" property="taskService"/>
+        <result column="params" jdbcType="VARCHAR" property="params"/>
+        <result column="create_time" jdbcType="VARCHAR" property="createTime"/>
+        <result column="update_time" jdbcType="VARCHAR" property="updateTime"/>
     </resultMap>
     
     <sql id="BaseColumn">
-        id, task_id, task_name
+        id, task_id, task_name, task_service, params, create_time, update_time
     </sql>
     
     <select id="listAll" resultMap="BaseResultMap">
