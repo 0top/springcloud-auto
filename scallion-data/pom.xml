@@ -52,6 +52,12 @@
             <artifactId>reactor-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!-- common -->
+        <dependency>
+            <groupId>top.zerotop</groupId>
+            <artifactId>scallion-common</artifactId>
+            <version>${scallion.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
