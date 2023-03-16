@@ -1,6 +1,5 @@
-package top.zerotop.scallion.datasource.config;
+package top.zerotop.scallion.datasource.task;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Condition;
 import org.springframework.context.annotation.ConditionContext;
 import org.springframework.context.annotation.Configuration;
