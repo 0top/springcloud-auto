@@ -12,7 +12,6 @@ import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
-import top.zerotop.scallion.datasource.psychokinesis.PsychokinesisDataSourceCondition;
 
 import javax.sql.DataSource;
 
