@@ -46,6 +46,17 @@
             <artifactId>spring-batch-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>top.zerotop</groupId>
+            <artifactId>scallion-datasource</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <!-- common -->
+        <dependency>
+            <groupId>top.zerotop</groupId>
+            <artifactId>scallion-common</artifactId>
+            <version>${scallion.version}</version>
+        </dependency>
     </dependencies>
     <dependencyManagement>
         <dependencies>
