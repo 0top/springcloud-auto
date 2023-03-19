@@ -15,12 +15,13 @@ public class TaskDataSourceCondition implements Condition {
     public boolean matches(ConditionContext conditionContext, AnnotatedTypeMetadata annotatedTypeMetadata) {
         Map<String, Object> m = conditionContext.getBeanFactory().getBeansWithAnnotation(EnableScallionDataSource.class);
         try {
-            String applicationBeanName = m.keySet().stream().filter(x -> x.endsWith("Application")).findFirst().get();
-            EnableScallionDataSource annotation = conditionContext.getBeanFactory().findAnnotationOnBean(applicationBeanName, EnableScallionDataSource.class);
-            boolean result = annotation != null &&
-                                annotation.enableDatabaseList() != null &&
-                                Arrays.asList(annotation.enableDatabaseList()).contains("scallion-task");
-            return result;
+            for (String beanName : m.keySet()) {
+                EnableScallionDataSource annotation = conditionContext.getBeanFactory().findAnnotationOnBean(beanName, EnableScallionDataSource.class);
+                boolean result = annotation != null &&
+                        annotation.enableDatabaseList() != null &&
+                        Arrays.asList(annotation.enableDatabaseList()).contains("scallion-task");
+                return result;
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
