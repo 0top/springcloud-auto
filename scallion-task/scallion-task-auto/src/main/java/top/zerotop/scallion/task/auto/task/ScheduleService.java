@@ -22,7 +22,7 @@ public class ScheduleService {
         return scheduleTaskMapper.listAll();
     }
 
-    @Scheduled(cron = "0/5 * * * * ?")
+    @Scheduled(cron = "0/30 * * * * ?")
     public void echoScheduleTask() {
         try {
             List<ScheduleTask> list = scheduleTaskMapper.listAll();

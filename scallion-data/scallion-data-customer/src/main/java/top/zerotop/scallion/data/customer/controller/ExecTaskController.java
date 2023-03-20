@@ -8,12 +8,13 @@ import top.zerotop.common.rest.Response;
 import top.zerotop.common.rest.ResponseUtil;
 
 @RestController
-@RequestMapping(value = "/task")
+@RequestMapping(value = "/data")
 public class ExecTaskController {
 
     @GetMapping(value = "/execSummaryTask")
     private Response invokeExample(@RequestParam String param) {
-        System.out.printf("收到任务，开始汇总。。。param" + param);
-        return ResponseUtil.ok();
+        String taskEcho = "收到任务，开始汇总。。。param" + param;
+        System.out.printf(taskEcho);
+        return ResponseUtil.ok(taskEcho);
     }
 }

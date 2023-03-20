@@ -14,16 +14,16 @@ public class RabbitmqConfig {
 
     @Bean
     public Queue scheduleQueue() {
-        return new Queue("top.zerotop.queue.schedule.fanout");
+        return new Queue("top.zerotop.queue.schedule.topic");
     }
 
     @Bean
-    public FanoutExchange scheduleFanout() {
-        return new FanoutExchange("scheduleFanout");
+    public TopicExchange scheduleTopic() {
+        return new TopicExchange("scheduleTopic");
     }
 
     @Bean
-    public Binding bindingScheduleFanout(Queue scheduleQueue, FanoutExchange scheduleFanout) {
-        return BindingBuilder.bind(scheduleQueue).to(scheduleFanout);
+    public Binding bindingScheduleTopic(Queue scheduleQueue, TopicExchange scheduleTopic) {
+        return BindingBuilder.bind(scheduleQueue).to(scheduleTopic).with("scheduleTopic");
     }
 }
