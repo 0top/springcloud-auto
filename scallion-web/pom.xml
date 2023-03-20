@@ -58,6 +58,12 @@
             <artifactId>scallion-common</artifactId>
             <version>${scallion.version}</version>
         </dependency>
+        <!-- datasource -->
+        <dependency>
+            <groupId>top.zerotop</groupId>
+            <artifactId>scallion-datasource</artifactId>
+            <version>${scallion.version}</version>
+        </dependency>
     </dependencies>
 
     <build>

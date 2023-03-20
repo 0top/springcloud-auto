@@ -13,6 +13,8 @@
    切换镜像  
    docker run -it --name nacos-server -p 8848:8848 -p 9848:9848 -p 9849:9849 -e MODE=standalone  -e SPRING_DATASOURCE_PLATFORM=mysql -e MYSQL_SERVICE_HOST=localhost -e MYSQL_SERVICE_PORT=3306 -e MYSQL_SERVICE_USER=scallion -e MYSQL_SERVICE_PASSWORD=scallion2022 -e MYSQL_SERVICE_DB_NAME=nacos-config -e TIME_ZONE='Asia/Shanghai' -d zhusaidong/nacos-server-m1:2.0.3
 
+   docker run -d -p 8848:8848 --env MODE=standalone  --name nacos  zhusaidong/nacos-server-m1:2.0.3
+
 ## 参考
 https://blog.csdn.net/qq991658923/article/details/128050862
 

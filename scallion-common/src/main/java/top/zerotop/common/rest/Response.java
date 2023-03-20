@@ -7,8 +7,6 @@ public class Response<T> {
 
     private T body;
 
-
-
     public Response(int code, String msg, T body) {
         this.code = code;
         this.msg = msg;

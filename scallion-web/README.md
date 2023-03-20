@@ -17,7 +17,11 @@ web相关项目
 
 ### web-psychokinesis
 
-学习说,可以每日发一句话，会根据热度进行排名  
-通过redis进行每日热榜排名
-到达一定程度会获得勋章
+- swagger
+  http://127.0.0.1:8082/scallion/psychokinesis/swagger-ui/index.html#/
+
+> 介绍  
+  学习说,可以每日发一句话，会根据热度进行排名   
+  通过redis进行每日热榜排名  
+  到达一定程度会获得勋章
 
