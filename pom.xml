@@ -27,6 +27,7 @@
         <module>scallion-web</module>
         <module>scallion-common</module>
         <module>scallion-datasource</module>
+        <module>scallion-auth/scallion-user</module>
     </modules>
 
     <dependencyManagement>

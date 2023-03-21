@@ -15,6 +15,7 @@
     [ ] springbatch
 
 - data:
+    [ ] mysql  
     [ ] elasticseach
     [ ] flink
     [ ] clinkhouse
@@ -26,10 +27,11 @@
     [ ] disruptor
   
 - other:
-    [x] swagger
+    [x] swagger3
   
 - docker：
-    [ ] docker-compose
+    [ ] docker-compose  
+        scallion-3trd包中存储docker-compose文件及介绍
 
 ## 规划
 
