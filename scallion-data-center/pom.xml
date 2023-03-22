@@ -7,13 +7,15 @@
         <artifactId>spring-cloud-scallion</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>scallion-data</artifactId>
+    <artifactId>scallion-data-center</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>scallion-data</name>
-    <description>data project</description>
+    <name>scallion-data-center</name>
+    <description>scallion data center project</description>
     <packaging>pom</packaging>
     <modules>
         <module>scallion-data-provider</module>
+        <module>scallion-data-customer</module>
+        <module>scallion-message-transfer</module>
     </modules>
 
     <properties>
