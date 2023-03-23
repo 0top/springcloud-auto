@@ -13,6 +13,11 @@
     <description>gateway project</description>
     <packaging>pom</packaging>
 
+    <modules>
+        <module>scallion-gateway-discovery</module>
+        <module>scallion-gateway-provider</module>
+    </modules>
+
     <properties>
         <java.version>11</java.version>
     </properties>
