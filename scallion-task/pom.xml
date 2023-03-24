@@ -7,12 +7,15 @@
         <artifactId>spring-cloud-scallion</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>top.zerotop</groupId>
     <artifactId>scallion-task</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>scallion-task</name>
-    <description>Demo project for Spring Boot</description>
+    <description>scallion task project</description>
     <packaging>pom</packaging>
+    <modules>
+        <module>scallion-task-auto</module>
+        <module>scallion-task-common</module>
+    </modules>
 
     <properties>
         <java.version>11</java.version>
@@ -46,12 +49,13 @@
             <artifactId>spring-batch-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!-- scallion-datasource -->
         <dependency>
             <groupId>top.zerotop</groupId>
             <artifactId>scallion-datasource</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>${scallion.version}</version>
         </dependency>
-        <!-- common -->
+        <!-- scallion-common -->
         <dependency>
             <groupId>top.zerotop</groupId>
             <artifactId>scallion-common</artifactId>
