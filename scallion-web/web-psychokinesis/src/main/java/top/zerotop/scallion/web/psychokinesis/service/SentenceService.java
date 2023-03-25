@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import top.zerotop.scallion.web.psychokinesis.entity.Sentence;
 import top.zerotop.scallion.web.psychokinesis.mapper.SentenceMapper;
+import top.zerotop.scallion.web.psychokinesis.mapper.SentenceOperateMapper;
 
 import java.util.List;
 
@@ -11,6 +12,8 @@ import java.util.List;
 public class SentenceService {
     @Autowired
     private SentenceMapper sentenceMapper;
+    @Autowired
+    private SentenceOperateMapper sentenceOperateMapper;
 
     public List<Sentence> listSentence() {
         return sentenceMapper.listAll();

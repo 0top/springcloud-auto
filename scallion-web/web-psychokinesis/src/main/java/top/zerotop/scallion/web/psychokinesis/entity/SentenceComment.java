@@ -1,11 +1,11 @@
 package top.zerotop.scallion.web.psychokinesis.entity;
 
-public class Sentence {
+public class SentenceComment {
     private long id;
 
     private String userId;
 
-    private String sentence;
+    private String sentenceId;
 
     private String createTime;
 
@@ -27,12 +27,12 @@ public class Sentence {
         this.userId = userId;
     }
 
-    public String getSentence() {
-        return sentence;
+    public String getSentenceId() {
+        return sentenceId;
     }
 
-    public void setSentence(String sentence) {
-        this.sentence = sentence;
+    public void setSentenceId(String sentenceId) {
+        this.sentenceId = sentenceId;
     }
 
     public String getCreateTime() {

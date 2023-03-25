@@ -1,6 +1,8 @@
-package top.zerotop.scallion.web.psychokinesis.entity;
+package top.zerotop.scallion.web.psychokinesis.dto;
 
-public class Sentence {
+import java.io.Serializable;
+
+public class SentenceDto implements Serializable {
     private long id;
 
     private String userId;
