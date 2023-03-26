@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import top.zerotop.common.rest.Response;
 import top.zerotop.common.rest.ResponseUtil;
+import top.zerotop.scallion.web.psychokinesis.dto.SentenceDto;
 import top.zerotop.scallion.web.psychokinesis.entity.Sentence;
 import top.zerotop.scallion.web.psychokinesis.service.SentenceService;
 
@@ -16,7 +17,7 @@ public class SentenceController {
     private SentenceService sentenceService;
 
     @GetMapping(value = "/list")
-    private Response listSentence() {
+    private Response<List<SentenceDto>> listSentence() {
         return ResponseUtil.ok(sentenceService.listSentence());
     }
 
