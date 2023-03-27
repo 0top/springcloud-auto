@@ -15,7 +15,7 @@
     [ ] springbatch
 
 - data:
-    [ ] mysql  
+    [x] mysql  
     [ ] elasticseach
     [ ] flink
     [ ] clinkhouse

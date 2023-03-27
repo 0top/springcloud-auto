@@ -4,24 +4,25 @@
         <id column="id" jdbcType="BIGINT" property="id"/>
         <result column="user_id" jdbcType="VARCHAR" property="userId"/>
         <result column="sentence_id" jdbcType="BIGINT" property="sentenceId"/>
-        <result column="operate_type" jdbcType="INTEGER" property="operateType"/>
-        <result column="operate_value" jdbcType="INTEGER" property="operateValue"/>
+        <result column="repost" jdbcType="INTEGER" property="repost"/>
+        <result column="attitude" jdbcType="INTEGER" property="attitude"/>
         <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
         <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
     </resultMap>
 
     <sql id="BaseColumn">
-        id, user_id, sentence_id, operate_type, operate_value, create_time, update_time
+        id, user_id, sentence_id, repost, attitude, create_time, update_time
     </sql>
 
-    <select id="listAll" resultMap="BaseResultMap">
+    <select id="listBySentenceId" resultMap="BaseResultMap">
         select
         <include refid="BaseColumn"/>
         from `scallion-pyschokinesis`.`t_sentence_operate`
+        where sentence_id=#{sentenceId}
     </select>
 
     <insert id="saveSentenceOperate">
-        insert into `scallion-pyschokinesis`.`t_sentence_operate`(user_id, sentence_id, operate_type, operate_value)
-        values (#{userId}, #{sentenceId}, #{operateType}, #{operateValue})
+        insert into `scallion-pyschokinesis`.`t_sentence_operate`(user_id, sentence_id, repost, attitude)
+        values (#{userId}, #{sentenceId}, #{repost}, #{attitude})
     </insert>
 </mapper>

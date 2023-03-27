@@ -9,7 +9,7 @@ import java.util.List;
 
 @Mapper
 public interface SentenceOperateMapper {
-    List<SentenceComment> listAll();
+    List<SentenceOperate> listBySentenceId(long sentence);
 
     int saveSentenceOperate(SentenceOperate sentenceOperate);
 }

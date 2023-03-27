@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import top.zerotop.scallion.web.psychokinesis.dto.SentenceDto;
 import top.zerotop.scallion.web.psychokinesis.entity.Sentence;
+import top.zerotop.scallion.web.psychokinesis.entity.SentenceOperate;
 import top.zerotop.scallion.web.psychokinesis.mapper.SentenceMapper;
 import top.zerotop.scallion.web.psychokinesis.mapper.SentenceOperateMapper;
 
@@ -28,5 +29,9 @@ public class SentenceService {
 
     public int saveSentence(Sentence sentence) {
         return sentenceMapper.saveSentence(sentence);
+    }
+
+    public List<SentenceOperate> querySentenceOperate(long sentenceId) {
+        return sentenceOperateMapper.listBySentenceId(sentenceId);
     }
 }

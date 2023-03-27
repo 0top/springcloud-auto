@@ -7,9 +7,9 @@ public class SentenceOperate {
 
     private String userId;
 
-    private int operateType;
+    private int repost;
 
-    private int operateValue;
+    private int attitude;
 
     private String createTime;
 
@@ -39,20 +39,20 @@ public class SentenceOperate {
         this.userId = userId;
     }
 
-    public int getOperateType() {
-        return operateType;
+    public int getRepost() {
+        return repost;
     }
 
-    public void setOperateType(int operateType) {
-        this.operateType = operateType;
+    public void setRepost(int repost) {
+        this.repost = repost;
     }
 
-    public int getOperateValue() {
-        return operateValue;
+    public int getAttitude() {
+        return attitude;
     }
 
-    public void setOperateValue(int operateValue) {
-        this.operateValue = operateValue;
+    public void setAttitude(int attitude) {
+        this.attitude = attitude;
     }
 
     public String getCreateTime() {
