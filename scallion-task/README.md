@@ -14,9 +14,12 @@
 
 - dexecutor
     依赖任务
+
 - springbatch
+    多线程写入数据
 
 - quartz
-
+    各类定时任务，通过数据库中配置触发类型，触发时间
+ 
 
 
