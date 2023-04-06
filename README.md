@@ -1,44 +1,44 @@
 # springcloud-scallion
 
-使用springcloud为技术栈的项目
+    使用springcloud为技术栈的项目
 
 # 技术栈
 
-- base:
-    java11 (待升级java17)
-    springboot
-    springcloud
-    mybatis
+- base:  
+    -[x] java11 (待升级java17)  
+    -[x] springboot  
+    -[x] springcloud  
+    -[x] mybatis  
 
 - task:
-    [ ] dag
-    [ ] springbatch
+    -[ ] dag  
+    -[ ] springbatch  
 
 - data:
-    [x] mysql  
-    [ ] elasticseach
-    [ ] flink
-    [ ] clinkhouse
-    [ ] mongodb
+    -[x] mysql  
+    -[ ] elasticseach
+    -[ ] flink
+    -[ ] clinkhouse
+    -[ ] mongodb
 
 - queue:
-    [x] rabbitmq
-    [ ] kafka
-    [ ] disruptor
+    -[x] rabbitmq
+    -[ ] kafka
+    -[ ] disruptor
   
 - other:
-    [x] swagger3
+    -[x] swagger3
   
 - docker：
-    [ ] docker-compose  
+    -[ ] docker-compose  
         scallion-3trd包中存储docker-compose文件及介绍
 
 ## 规划
 
-[x] 网关
-[ ] 任务(含依赖任务)
-[ ] 业务
-[ ] 监控
+-[x] 网关
+-[ ] 任务(含依赖任务)
+-[ ] 业务
+-[ ] 监控
     prometheus
 
 ## nginx 
