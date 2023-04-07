@@ -61,6 +61,11 @@
             <artifactId>scallion-common</artifactId>
             <version>${scallion.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.dexecutor</groupId>
+            <artifactId>dexecutor-core</artifactId>
+            <version>2.1.2</version>
+        </dependency>
     </dependencies>
     <dependencyManagement>
         <dependencies>

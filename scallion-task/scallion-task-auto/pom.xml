@@ -72,6 +72,11 @@
             <artifactId>springfox-boot-starter</artifactId>
             <version>${swagger.version}</version>
         </dependency>
+        <dependency>
+            <groupId>top.zerotop</groupId>
+            <artifactId>scallion-task-common</artifactId>
+            <version>${scallion.version}</version>
+        </dependency>
     </dependencies>
     <dependencyManagement>
         <dependencies>
