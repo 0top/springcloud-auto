@@ -11,6 +11,6 @@ public class ScheduleJob implements Job {
 
     @Override
     public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException {
-        logger.info("执行定时任务");
+        logger.info("调用任务:" + jobExecutionContext.getJobDetail().getKey());
     }
 }
