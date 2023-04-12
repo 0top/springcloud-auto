@@ -20,7 +20,7 @@ public class ScheduleTaskController {
     private RestTemplate restTemplate;
 
     @GetMapping(value = "/list")
-    private Response listSentence() {
+    private Response listScheduleTask() {
 
         try {
             String url = "http://scallion-data-customer/data/execSummaryTask?param=1";

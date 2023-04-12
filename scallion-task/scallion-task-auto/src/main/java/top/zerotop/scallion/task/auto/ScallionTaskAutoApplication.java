@@ -13,7 +13,7 @@ import top.zerotop.scallion.datasource.EnableScallionDataSource;
 @EnableDiscoveryClient
 @EnableScallionDataSource(enableDatabaseList = {"scallion-task"})
 @SpringBootApplication(exclude = {SimpleTaskAutoConfiguration.class, DataSourceAutoConfiguration.class},
-                            scanBasePackages = {"top.zerotop.scallion.datasource", "top.zerotop.scallion.task.auto"})
+                            scanBasePackages = {"top.zerotop.scallion.datasource", "top.zerotop.scallion.task.auto", "top.zerotop.scallion.task.common"})
 public class ScallionTaskAutoApplication {
     public static void main(String[] args) {
         SpringApplication.run(ScallionTaskAutoApplication.class, args);
