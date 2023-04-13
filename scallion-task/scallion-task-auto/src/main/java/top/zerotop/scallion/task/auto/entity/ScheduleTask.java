@@ -12,6 +12,10 @@ public class ScheduleTask implements Serializable {
 
     private String taskService;
 
+    private String cron;
+
+    private boolean dataStatus;
+
     private String params;
 
     private LocalDateTime createTime;
@@ -47,6 +51,22 @@ public class ScheduleTask implements Serializable {
 
     public void setTaskService(String taskService) {
         this.taskService = taskService;
+    }
+
+    public String getCron() {
+        return cron;
+    }
+
+    public void setCron(String cron) {
+        this.cron = cron;
+    }
+
+    public boolean isDataStatus() {
+        return dataStatus;
+    }
+
+    public void setDataStatus(boolean dataStatus) {
+        this.dataStatus = dataStatus;
     }
 
     public String getParams() {
