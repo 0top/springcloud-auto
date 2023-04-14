@@ -52,6 +52,12 @@
             <artifactId>scallion-common</artifactId>
             <version>${scallion.version}</version>
         </dependency>
+        <!-- swagger-ui -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-boot-starter</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
     </dependencies>
 
     <build>

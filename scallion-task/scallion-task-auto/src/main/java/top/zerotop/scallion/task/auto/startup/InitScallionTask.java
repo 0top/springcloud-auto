@@ -32,7 +32,7 @@ public class InitScallionTask implements CommandLineRunner {
             scallionTask.setTaskGroup(TASK_SCHEDULE.name());
             scallionTask.setCronExp(scheduleTask.getCron());
             Class clazz = Class.forName("top.zerotop.scallion.task.auto." + scheduleTask.getTaskService());
-            quartzManager.addQuartzJob(scallionTask, clazz);
+//            quartzManager.addQuartzJob(scallionTask, clazz);
 
             System.out.printf("======新增任务: " + scallionTask.getTaskName());
 

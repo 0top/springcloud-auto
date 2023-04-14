@@ -14,7 +14,7 @@ public class ExecTaskController {
     @GetMapping(value = "/execSummaryTask")
     private Response invokeExample(@RequestParam String param) {
         String taskEcho = "收到任务，开始汇总。。。param" + param;
-        System.out.printf(taskEcho);
+        System.out.println(taskEcho);
         return ResponseUtil.ok(taskEcho);
     }
 }
