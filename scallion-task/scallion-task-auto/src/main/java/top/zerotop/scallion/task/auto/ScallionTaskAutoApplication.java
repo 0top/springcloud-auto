@@ -1,5 +1,6 @@
 package top.zerotop.scallion.task.auto;
 
+import io.netty.util.internal.StringUtil;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
@@ -16,6 +17,9 @@ import top.zerotop.scallion.datasource.EnableScallionDataSource;
                             scanBasePackages = {"top.zerotop.scallion.datasource", "top.zerotop.scallion.task.auto", "top.zerotop.scallion.task.common"})
 public class ScallionTaskAutoApplication {
     public static void main(String[] args) {
+        if (StringUtil.isNullOrEmpty(System.getProperty("project.name"))) {
+            System.setProperty("project.name", "scallion-task-auto");
+        }
         SpringApplication.run(ScallionTaskAutoApplication.class, args);
     }
 
