@@ -17,11 +17,11 @@
     <select id="listAll" resultMap="BaseResultMap">
         select
         <include refid="BaseColumn"/>
-        from `scallion-pyschokinesis`.`t_sentence_comment_operate`
+        from `scallion-psychokinesis`.`t_sentence_comment_operate`
     </select>
 
     <insert id="saveSentenceCommentOpreate">
-        insert into `scallion-pyschokinesis`.`t_sentence_comment_operate` (user_id, comment_id, operate_type, operate_value)
+        insert into `scallion-psychokinesis`.`t_sentence_comment_operate` (user_id, comment_id, operate_type, operate_value)
         values (#{userId}, #{commentId}, #{operateType}, #{operateValue})
     </insert>
 </mapper>

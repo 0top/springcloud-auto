@@ -16,12 +16,12 @@
     <select id="querySentenceCommentById" resultMap="BaseResultMap">
         select
         <include refid="BaseColumn"/>
-        from `scallion-pyschokinesis`.`t_sentence_comment`
+        from `scallion-psychokinesis`.`t_sentence_comment`
         where sentence_id=#{sentenceId}
     </select>
 
     <insert id="saveSentenceComment">
-        insert into `scallion-pyschokinesis`.`t_sentence_comment`(`user_id`, `sentence_id`, `comment`)
+        insert into `scallion-psychokinesis`.`t_sentence_comment`(`user_id`, `sentence_id`, `comment`)
         values (#{userId}, #{sentence_id}, #{comment})
     </insert>
 </mapper>

@@ -13,7 +13,8 @@ public class SummaryPsychokinesisJob implements Job {
     @Override
     public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException {
         try {
-            String url = "http://scallion-data-customer/data/execSummaryTask?param=1";
+//            String url = "http://scallionallion-data-customer/data/execSummaryTask?param=1";
+            String url = "http://scallion-web-psychokinesis/scallion/psychokinesis/task/summary";
             String result = CompletableFuture.supplyAsync(() -> {
                 String res = remoteRestTemplate.getForObject(url, String.class);
                 return res;})

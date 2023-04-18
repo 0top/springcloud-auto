@@ -15,11 +15,11 @@
     <select id="listAll" resultMap="BaseResultMap">
         select
         <include refid="BaseColumn"/>
-        from `scallion-pyschokinesis`.`t_sentence`
+        from `scallion-psychokinesis`.`t_sentence`
     </select>
 
     <insert id="saveSentence">
-        insert into `scallion-pyschokinesis`.`t_sentence`(user_id, sentence)
+        insert into `scallion-psychokinesis`.`t_sentence`(user_id, sentence)
         values (#{userId}, #{sentence})
     </insert>
 </mapper>

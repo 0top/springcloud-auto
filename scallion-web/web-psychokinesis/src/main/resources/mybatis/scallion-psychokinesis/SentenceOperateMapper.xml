@@ -17,12 +17,12 @@
     <select id="listBySentenceId" resultMap="BaseResultMap">
         select
         <include refid="BaseColumn"/>
-        from `scallion-pyschokinesis`.`t_sentence_operate`
+        from `scallion-psychokinesis`.`t_sentence_operate`
         where sentence_id=#{sentenceId}
     </select>
 
     <insert id="saveSentenceOperate">
-        insert into `scallion-pyschokinesis`.`t_sentence_operate`(user_id, sentence_id, repost, attitude)
+        insert into `scallion-psychokinesis`.`t_sentence_operate`(user_id, sentence_id, repost, attitude)
         values (#{userId}, #{sentenceId}, #{repost}, #{attitude})
     </insert>
 </mapper>

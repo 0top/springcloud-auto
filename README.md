@@ -13,6 +13,7 @@
 - task:
     -[ ] dag  
     -[ ] springbatch  
+    -[ ] quartz
 
 - data:
     -[x] mysql  
