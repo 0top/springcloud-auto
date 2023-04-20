@@ -21,5 +21,11 @@
 - quartz
     各类定时任务，通过数据库中配置触发类型，触发时间
  
+## 具体task
 
+    psychokinesis任务：
+        使用dag实现下述依赖任务
+        1. 调用ScallionDataProvider进行数据生成
+        2. 调用WebPsychokinesis进行数据统计
+        
 
