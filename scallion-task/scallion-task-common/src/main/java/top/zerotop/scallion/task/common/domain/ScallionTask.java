@@ -3,11 +3,14 @@ package top.zerotop.scallion.task.common.domain;
 public class ScallionTask {
     private long id;
 
+    private String task;
     private String taskName;
 
     private String taskGroup;
 
-    private String cronExp;
+    private String cronExpr;
+
+    private String relayTask;
 
     private String execService;
 
@@ -17,6 +20,14 @@ public class ScallionTask {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public String getTask() {
+        return task;
+    }
+
+    public void setTask(String task) {
+        this.task = task;
     }
 
     public String getTaskName() {
@@ -35,12 +46,20 @@ public class ScallionTask {
         this.taskGroup = taskGroup;
     }
 
-    public String getCronExp() {
-        return cronExp;
+    public String getCronExpr() {
+        return cronExpr;
     }
 
-    public void setCronExp(String cronExp) {
-        this.cronExp = cronExp;
+    public void setCronExpr(String cronExpr) {
+        this.cronExpr = cronExpr;
+    }
+
+    public String getRelayTask() {
+        return relayTask;
+    }
+
+    public void setRelayTask(String relayTask) {
+        this.relayTask = relayTask;
     }
 
     public String getExecService() {
