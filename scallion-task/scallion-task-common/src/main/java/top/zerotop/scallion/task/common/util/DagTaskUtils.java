@@ -4,6 +4,7 @@ import com.github.dexecutor.core.DefaultDexecutor;
 import com.github.dexecutor.core.DexecutorConfig;
 import com.github.dexecutor.core.ExecutionConfig;
 import top.zerotop.scallion.task.common.domain.ScallionTask;
+import top.zerotop.scallion.task.common.domain.ScallionTaskComb;
 
 import java.util.List;
 import java.util.Map;
@@ -11,8 +12,8 @@ import java.util.stream.Collectors;
 
 public class DagTaskUtils {
     public void executeTask() {
-        DexecutorConfig<String, String> dexecutorConfig = new DexecutorConfig<String, String>(ExecutorUtils.generateExecutorService(), new DagTaskProvider<ScallionTask, Boolean>());
-        DefaultDexecutor<String, String> dexecutor = new DefaultDexecutor<>(dexecutorConfig);
+        DexecutorConfig<ScallionTaskComb, String> dexecutorConfig = new DexecutorConfig<ScallionTaskComb, String>(ExecutorUtils.generateExecutorService(), new DagTaskProvider());
+        DefaultDexecutor<ScallionTaskComb, String> dexecutor = new DefaultDexecutor<>(dexecutorConfig);
         ExecutionConfig executionConfig = new ExecutionConfig();
         dexecutor.execute(executionConfig);
     }

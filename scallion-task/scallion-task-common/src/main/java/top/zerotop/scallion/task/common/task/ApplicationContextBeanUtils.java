@@ -1,4 +1,4 @@
-package top.zerotop.scallion.task.auto.task;
+package top.zerotop.scallion.task.common.task;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
