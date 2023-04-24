@@ -31,6 +31,7 @@
         <module>scallion-datasource</module>
         <module>scallion-auth/scallion-user</module>
         <module>scallion-data-center/scallion-message-transfer</module>
+        <module>scallion-data-center/scallion-data-stock</module>
     </modules>
 
     <dependencyManagement>
