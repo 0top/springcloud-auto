@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import top.zerotop.scallion.task.auto.entity.ScheduleTask;
-import top.zerotop.scallion.task.auto.task.ScheduleService;
+import top.zerotop.scallion.task.auto.job.ScheduleService;
 import top.zerotop.scallion.task.common.domain.ScallionTask;
 import top.zerotop.scallion.task.common.manager.QuartzManager;
 
@@ -30,12 +30,11 @@ public class InitScallionTask implements CommandLineRunner {
             ScallionTask scallionTask = new ScallionTask();
             scallionTask.setTaskName(scheduleTask.getTaskName());
             scallionTask.setTaskGroup(TASK_SCHEDULE.name());
-            scallionTask.setCronExp(scheduleTask.getCron());
+            scallionTask.setCronExpr(scheduleTask.getCron());
             Class clazz = Class.forName("top.zerotop.scallion.task.auto." + scheduleTask.getTaskService());
             quartzManager.addQuartzJob(scallionTask, clazz);
 
-            System.out.printf("======新增任务: " + scallionTask.getTaskName());
-
+            System.out.println("====》新增定时任务: " + scallionTask.getTaskName());
         }
     }
 }

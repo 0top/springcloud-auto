@@ -14,7 +14,7 @@ public class Swagger3Config {
         return new Docket(DocumentationType.OAS_30)
                 .apiInfo(new ApiInfoBuilder()
                                 .contact(new Contact("0top", "", ""))
-                                .title("psychokinesis project")
+                                .title("data customer project")
                                 .build()
                 );
     }
