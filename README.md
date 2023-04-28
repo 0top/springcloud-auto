@@ -1,6 +1,8 @@
 # springcloud-scallion
 
     使用springcloud为技术栈的项目
+    项目版本选取 https://start.spring.io/actuator/info
+               https://github.com/alibaba/spring-cloud-alibaba/wiki/版本说明
 
 # 技术栈
 

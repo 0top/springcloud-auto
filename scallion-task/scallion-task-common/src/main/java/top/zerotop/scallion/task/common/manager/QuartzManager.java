@@ -19,7 +19,7 @@ public class QuartzManager {
             Scheduler scheduler = schedulerFactory.getScheduler();
             Trigger trigger = TriggerBuilder.newTrigger()
                     .withIdentity(scallionTask.getTaskName(), scallionTask.getTaskGroup())
-                    .withSchedule(CronScheduleBuilder.cronSchedule(scallionTask.getCronExp()))
+                    .withSchedule(CronScheduleBuilder.cronSchedule(scallionTask.getCronExpr()))
                     .build();
             JobDetail jobDetail = JobBuilder.newJob(clazz)
                     .withIdentity(scallionTask.getTaskName(), scallionTask.getTaskGroup())
