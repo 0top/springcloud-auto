@@ -11,6 +11,8 @@
 ### 3. 数据推送 scallion-message-transfer
     此模块主要接受各类消息并进行分发
     - springcloudstream
+    - http
+        scallion-task-auto读取schedule job,调用scallion-message-transfer进行任务转发
 
 ## 规划（饼）
 

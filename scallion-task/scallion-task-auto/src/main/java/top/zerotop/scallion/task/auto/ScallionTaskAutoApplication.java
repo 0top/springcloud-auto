@@ -21,5 +21,4 @@ public class ScallionTaskAutoApplication {
         }
         SpringApplication.run(ScallionTaskAutoApplication.class, args);
     }
-
 }
