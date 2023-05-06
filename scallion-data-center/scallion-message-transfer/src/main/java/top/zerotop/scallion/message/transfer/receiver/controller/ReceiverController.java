@@ -19,6 +19,7 @@ public class ReceiverController {
         params.forEach((k, v) -> {
             System.out.println(k + "  " + v);
         });
+        messageForwardService.forward(params);
         return ResponseUtil.ok(true);
     }
 
