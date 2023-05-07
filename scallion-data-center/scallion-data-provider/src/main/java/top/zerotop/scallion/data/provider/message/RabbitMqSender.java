@@ -1,4 +1,4 @@
-package top.zerotop.scallion.data.provider.data;
+package top.zerotop.scallion.data.provider.message;
 
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;

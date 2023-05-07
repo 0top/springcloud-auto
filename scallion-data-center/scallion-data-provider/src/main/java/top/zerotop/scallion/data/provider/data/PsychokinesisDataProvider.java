@@ -1,7 +1,6 @@
-package top.zerotop.scallion.data.provider.web;
+package top.zerotop.scallion.data.provider.data;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
@@ -18,7 +17,7 @@ public class PsychokinesisDataProvider {
 
     static Random random = new Random();
 
-    @Scheduled(cron = "0/15 * * * * ?")
+//    @Scheduled(cron = "0/30 * * * * ?")
     public void generateSentence() {
         System.out.println("开始执行生成任务======》 psychokinesis generate sentence");
         String time = LocalTime.now().toString();

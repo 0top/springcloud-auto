@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
-import top.zerotop.scallion.data.provider.data.RabbitMqSender;
+import top.zerotop.scallion.data.provider.message.RabbitMqSender;
 import top.zerotop.scallion.data.provider.netty.NettyHandler;
 import top.zerotop.scallion.data.provider.netty.NettyServer;
 
