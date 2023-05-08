@@ -1,9 +1,8 @@
-package top.zerotop.scallion.task.auto.task;
+package top.zerotop.scallion.task.auto.job;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 import top.zerotop.scallion.task.auto.entity.ScheduleTask;

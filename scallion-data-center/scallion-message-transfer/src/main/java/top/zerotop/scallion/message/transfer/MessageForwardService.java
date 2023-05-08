@@ -3,6 +3,7 @@ package top.zerotop.scallion.message.transfer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
+import top.zerotop.common.task.TaskMessage;
 import top.zerotop.scallion.message.transfer.domain.ForwardMessage;
 import top.zerotop.scallion.message.transfer.message.RabbitMqPublish;
 
@@ -16,20 +17,16 @@ public class MessageForwardService {
     @Autowired
     private RabbitMqPublish rabbitMqPublish;
 
-    public void forward(Map<String, Object> map) {
-        publishRabbitMqMessage(map);
+    public void forward(TaskMessage taskMessage) {
+        publishRabbitMqMessage(taskMessage);
     }
 
     /**
      * 发布rabbitmq消息
      * @param map
      */
-    private void publishRabbitMqMessage(Map<String, Object> map) {
-        ForwardMessage forwardMessage = new ForwardMessage();
-        forwardMessage.setTarget((String) map.get("target"));
-        forwardMessage.setUrl((String) map.get("url"));
-        forwardMessage.setParams(map);
-        rabbitMqPublish.publishTask(forwardMessage);
+    private void publishRabbitMqMessage(TaskMessage taskMessage) {
+        rabbitMqPublish.publishTask(taskMessage);
     }
 
     /**

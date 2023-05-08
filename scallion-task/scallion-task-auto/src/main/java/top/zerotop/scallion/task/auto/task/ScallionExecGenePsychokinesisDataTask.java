@@ -3,14 +3,13 @@ package top.zerotop.scallion.task.auto.task;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+import top.zerotop.common.task.TaskMessage;
+import top.zerotop.common.task.enums.TaskTypeEnum;
 import top.zerotop.scallion.task.common.domain.ScallionTask;
 import top.zerotop.scallion.task.common.domain.ScallionTaskContext;
 import top.zerotop.scallion.task.common.task.ScallionExecTask;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Objects;
 import java.util.concurrent.CompletableFuture;
 
 @Service(value = "scallionExecGenePsychokinesisDataTask")
@@ -22,10 +21,12 @@ public class ScallionExecGenePsychokinesisDataTask implements ScallionExecTask {
         try {
 //            String url = "http://scallionallion-data-customer/data/execSummaryTask?param=1";
             String url = "http://scallion-message-transfer/scallion/forward/accept/task";
+            TaskMessage taskMessage = new TaskMessage();
+            taskMessage.setTarget("scallion-data-provider");
+            taskMessage.setUrl("/scallion/forward/accept/task");
+            taskMessage.setTaskType(TaskTypeEnum.GENERATE_DATA);
             String result = CompletableFuture.supplyAsync(() -> {
-                        Map<String, Object> dataMap = new HashMap<>();
-                        dataMap.put("target", "scallion-data-provider");
-                        String res = remoteRestTemplate.postForObject(url, dataMap, String.class);
+                        String res = remoteRestTemplate.postForObject(url, taskMessage, String.class);
                         return res;})
                     .get();
 
