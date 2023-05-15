@@ -14,12 +14,13 @@
     - http
         scallion-task-auto读取schedule job,调用scallion-message-transfer进行任务转发
 
-## 规划（饼）
+## 规划
 
-对于java来讲,处理大批量数据要用到大数据  
-所以后面会添加关于pandas的处理。
+[ ] 对于java来讲,处理大批量数据要用到大数据,后面会添加关于pandas的处理。
 
-通过java调用脚本实现数据处理或者生成。
+[ ] 通过java调用脚本实现数据处理或者生成。
+
+[ ] 通过远程调用
 
 ## rabbitmq安装
 
