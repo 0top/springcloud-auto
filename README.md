@@ -44,6 +44,7 @@
 -[ ] 业务
 -[ ] 监控
     prometheus
+    categraf
 
 ## nginx 
 
