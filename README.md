@@ -42,6 +42,8 @@
     netty
 -[ ] 任务(含依赖任务)
 -[ ] 业务
+    scallion-web
+        seata事物控制
 -[ ] 监控
     prometheus
     categraf
@@ -57,4 +59,4 @@ nacos-server: 1.4.2
     2.2.7.RELEASE 则对应nacos客户端2.x版本,主要是gRPC协议更新影响
 
 seata
-    通过seate完成分布式事物
+    通过seata完成分布式事物
