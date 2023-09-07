@@ -60,8 +60,8 @@ nacos-server: 1.4.2
     2.2.7.RELEASE 则对应nacos客户端2.x版本,主要是gRPC协议更新影响
 
 seata
-    通过seata完成分布式事物
+    通过seata完成分布式事务
 
-## 定位
+## 问题定位
     - arthas
 
