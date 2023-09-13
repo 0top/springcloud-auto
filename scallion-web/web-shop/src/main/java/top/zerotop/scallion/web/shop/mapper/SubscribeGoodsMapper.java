@@ -4,7 +4,7 @@ import top.zerotop.scallion.web.shop.entity.Goods;
 
 import java.util.List;
 
-public interface SubscribeMessageMapper {
+public interface SubscribeGoodsMapper {
     List<Goods> listSubscribeMessageGoods();
 
 }

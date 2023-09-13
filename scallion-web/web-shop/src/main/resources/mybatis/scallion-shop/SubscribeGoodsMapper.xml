@@ -1,0 +1,27 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.zerotop.scallion.web.psychokinesis.mapper.SentenceCommentMapper">
+    <resultMap id="BaseResultMap" type="top.zerotop.scallion.web.psychokinesis.entity.SentenceComment">
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="user_id" jdbcType="VARCHAR" property="userId"/>
+        <result column="sentence_id" jdbcType="BIGINT" property="sentenceId"/>
+        <result column="comment" jdbcType="VARCHAR" property="comment"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+    </resultMap>
+
+    <sql id="BaseColumn">
+        id, user_id, sentence_id, comment, create_time, update_time
+    </sql>
+
+    <select id="querySentenceCommentById" resultMap="BaseResultMap">
+        select
+        <include refid="BaseColumn"/>
+        from `scallion-psychokinesis`.`t_sentence_comment`
+        where sentence_id=#{sentenceId}
+    </select>
+
+    <insert id="saveSentenceComment">
+        insert into `scallion-psychokinesis`.`t_sentence_comment`(`user_id`, `sentence_id`, `comment`)
+        values (#{userId}, #{sentence_id}, #{comment})
+    </insert>
+</mapper>

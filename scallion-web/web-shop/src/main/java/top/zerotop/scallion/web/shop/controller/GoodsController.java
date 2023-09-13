@@ -6,11 +6,9 @@ import org.springframework.web.bind.annotation.RestController;
 import top.zerotop.common.rest.Response;
 import top.zerotop.common.rest.ResponseUtil;
 
-import java.util.List;
-
 @RestController
-@RequestMapping(value = "/subscribe")
-public class SubscribeMessageController {
+@RequestMapping(value = "/goods/subscribe")
+public class GoodsController {
 
     @GetMapping(value = "/list")
     private Response<String> listSentence() {
