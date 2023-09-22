@@ -37,6 +37,15 @@ web相关项目
 - report    报告：每日总结，周报
 - subscribe 订阅
 
+### 分布式事务
+
+1. web-shop模块可以展示所有可供订阅或交易的内容
+   通过web-shop模块中积分或余额购买商品，由seate进行全局事务管控
+   - web-shop下单
+   - scallion-data-provider模块记录购买信息，并生成订阅链接
+   - scallion-user进行积分扣款
+   
+
 ### 数据
 
 通过脚本预先插入数据
