@@ -47,7 +47,7 @@
         seata事物控制
 -[ ] 监控
     prometheus
-    categraf
+    categraf(基于go语言指标采集器)
 
 ## nginx 
 
