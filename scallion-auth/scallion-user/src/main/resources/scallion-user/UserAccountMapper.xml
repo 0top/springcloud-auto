@@ -1,33 +1,34 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="top.zerotop.scallion.user.mapper.UserMapper">
-    <resultMap id="BaseResultMap" type="top.zerotop.scallion.user.domain.User">
+    <resultMap id="BaseResultMap" type="top.zerotop.scallion.user.domain.UserAccount">
         <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="account_id" jdbcType="VARCHAR" property="accountId"/>
         <result column="user_id" jdbcType="VARCHAR" property="userId"/>
-        <result column="user_name" jdbcType="VARCHAR" property="userName"/>
-        <result column="password" jdbcType="VARCHAR" property="password"/>
+        <result column="account_name" jdbcType="VARCHAR" property="accountName"/>
+        <result column="deposit" jdbcType="DECIMAL" property="deposit"/>
         <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
         <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
     </resultMap>
 
     <sql id="BaseColumn">
-        id, user_id, user_name, password, create_time, update_time
+        id, account_id, user_id, account_name, deposit, create_time, update_time
     </sql>
 
     <select id="listAllUser" resultMap="BaseResultMap">
         select
         <include refid="BaseColumn"/>
-        from `scallion-user`.`t_user`
+        from `scallion-user`.`t_user_account`
     </select>
 
     <select id="selectByPrimary" resultMap="BaseResultMap">
         select
         <include refid="BaseColumn"/>
-        from `scallion-user`.`t_user`
+        from `scallion-user`.`t_user_account`
     </select>
 
-    <insert id="saveUser">
-        insert into `scallion_user`.`t_user` (user_id, user_name, password)
-        values (#{userId}, #{user_name}, #{password})
+    <insert id="saveUserAccount">
+        insert into `scallion_user`.`t_user_account` (account_id, account_name, user_id)
+        values (#{accountId}, #{account_name}, #{userId})
     </insert>
 
 
