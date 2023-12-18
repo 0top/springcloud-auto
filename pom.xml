@@ -33,6 +33,7 @@
         <module>scallion-data-center/scallion-message-transfer</module>
         <module>scallion-data-center/scallion-data-stock</module>
         <module>scallion-web/web-shop</module>
+        <module>scallion-trading</module>
     </modules>
 
     <dependencyManagement>
