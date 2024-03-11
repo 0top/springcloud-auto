@@ -11,7 +11,7 @@ import top.zerotop.common.rest.ResponseUtil;
 public class GoodsController {
 
     @GetMapping(value = "/list")
-    private Response<String> listSentence() {
+    private Response<String> listSubscribeGoods() {
         return ResponseUtil.ok("获取订阅链接");
     }
 

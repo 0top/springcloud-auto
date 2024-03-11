@@ -3,7 +3,7 @@ package top.zerotop.scallion.web.shop.entity;
 public class SubscribeGoods extends Goods {
     private String token;
 
-    private String subscribe;
+    private String link;
 
     private String description;
 
@@ -17,12 +17,12 @@ public class SubscribeGoods extends Goods {
         this.token = token;
     }
 
-    public String getSubscribe() {
-        return subscribe;
+    public String getLink() {
+        return link;
     }
 
-    public void setSubscribe(String subscribe) {
-        this.subscribe = subscribe;
+    public void setLink(String link) {
+        this.link = link;
     }
 
     public String getDescription() {
