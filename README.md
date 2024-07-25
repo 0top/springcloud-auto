@@ -18,6 +18,7 @@
     -[x] quartz
 
 - data:
+    -[x] redis  
     -[x] mysql  
     -[ ] elasticseach
     -[ ] flink
